@@ -54,7 +54,9 @@ function chosenIp()
      var API = "https://geo.ipify.org/api/v1?apiKey=at_6HAikqSj9SulCtaSExcj0Y56dUVcP&ipAddress=" + IP
        var response = await fetch(API)
        var data =  await response.json()
-       console.log(data)
+      if(data.ip == undefined) {alert("please type an Ip adress")
+       searchBar.value = ""
+       }
        var marker = L.marker([data.location.lat, data.location.lng]).addTo(mymap);
        ip.innerHTML = data.ip
        loc.innerHTML = data.location.country + " , " + data.location.city
