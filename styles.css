@@ -114,16 +114,16 @@ header {
 @media only screen and (max-width: 820px) {
     .display article p {
         
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         
     }
     .display {
         display: flex;
         flex-direction: column;
         background-color: whitesmoke;
-        height: 30vh;
+        height: 33vh;
         position: absolute;
-        bottom : -38% ;
+        bottom : -48% ;
         
     }
 
@@ -145,19 +145,49 @@ header {
         display: flex;
         flex-direction: column;
         background-color: whitesmoke;
-        height: 46vh;
+        height: 35vh;
         position: absolute;
-        bottom : -70% ;
+        top : 40% ;
     }
 
     .display article {
         border-right: none;
         padding-bottom: 0px;
     }
+    header {
+        padding-top: 2px;
+        gap : 3px ;
+    }
 
 }
 
+@media only screen and (max-width: 480px) and (orientation: landscape)
+{
+    .display article p {
+        
+        font-size: 1.2rem;
+        
+    }
+    .display {
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        height: 55vh;
+        position: absolute;
+        top : 40% ;
+    }
 
+    .display article {
+        border-right: none;
+        padding-bottom: 0px;
+    }
+    header {
+        padding-top: 2px;
+        gap : 3px ;
+    }
+
+
+}
 
 @media only screen and (max-width: 380px) {
     .display article p {
@@ -169,9 +199,9 @@ header {
         display: flex;
         flex-direction: column;
         background-color: whitesmoke;
-        height: 28vh;
+        height: 29vh;
         position: absolute;
-        bottom : -48% ;
+        top : 53% ;
     }
 
     .display article {
